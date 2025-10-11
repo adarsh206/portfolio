@@ -14,7 +14,7 @@
     </div>
     <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
         <h1 class="w-48 sm:text-2xl md:text-3xl cursor-pointer font-bold mr-14 bg-gradient-to-r from bg-purple-600 to-rose-600 bg-clip-text text-transparent">PORTFOLIO</h1>
-        <ul class="md:flex hidden items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+        <ul class="md:flex hidden items-center gap-6 lg:gap-8 rounded-full px-12 py-3 backdrop-blur shadow-sm bg-opacity-50">
             <li><a href="#top">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#services">Services</a></li>
@@ -23,13 +23,13 @@
         </ul>
 
         <div class="flex items-center gap-4">
-             <button><img src="./images/moon_icon.png" alt="" class="w-6"></button>
+             <button class="cursor-pointer"><img src="./images/moon_icon.png" alt="" class="w-6"></button>
             
              <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">Contact 
             <img src="./images/arrow-icon.png" alt="" class="w-3"/>
         </a>
 
-        <button class="block md:hidden ml-3">
+        <button class="block cursor-pointer md:hidden ml-3" onclick="openMenu()">
             <img src="./images/menu-black.png" alt="" class="w-6">
         </button>
         </div>
@@ -37,17 +37,78 @@
         <!------- Mobile Menu -------->
         <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500">
             
-            <div class="absolute right-6 top-6">
+            <div class="absolute cursor-pointer right-6 top-6" onclick="closeMenu()">
                 <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer">
             </div>
             
-            <li><a href="#top">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#work">My Work</a></li>
-            <li><a href="#contact">Contact me</a></li>
+            <li><a href="#top" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About Me</a></li>
+            <li><a href="#services" onclick="closeMenu()">Services</a></li>
+            <li><a href="#work" onclick="closeMenu()">My Work</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
         </ul>
        
     </nav>
+    <!------- Header Section -------->
+    <div class="w-11/12 max-w-3xl text-center mx-auto pt-30 pb-10 sm:pb-20 flex flex-col items-center justify-center gap-4">
+        <img src="./images/profile.JPG" alt="" class="rounded-full w-50 sm:w-32">
+        <h3 class="flex items-end gap-2 text-2xl md:text-3xl mb-3">Hi! I'm <span class="font-bold bg-gradient-to-r from bg-purple-600 to-rose-600 bg-clip-text text-transparent">Adarsh Kumar</span> 
+            <img src="./images/hand-icon.png" alt="" class="w-6"></h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[56px]"><span class="font-bold bg-gradient-to-r from bg-purple-600 to-rose-600 bg-clip-text text-transparent">Software Engineer</span> based in India.</h1>
+        <p class="max-w-2xl mx-auto">I am a Full Stack Developer from India with 4 years of experience in multiple companies like Infinite Computer Solutions, Capgemini and Infosys Limited.</p>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-purple-700 to-rose-600 text-white flex items-center gap-2">contact me 
+                <img src="./images/right-arrow-white.png" class="w-4" alt="">
+            </a>
+
+            <a href="./images/adarsh-resume.pdf" download 
+            class="px-10 py-3 border border-gray-500 rounded-full bg-white flex items-center gap-2">my resume 
+                <img src="./images/download-icon.png" class="w-4" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!--- about me --->
+    <div id="about" class="w-full px-[12%] py-10">
+        <h4 class="text-center mb-2 text-lg">Introduction</h4>
+        <h2 class="text-center text-5xl bg-gradient-to-r from bg-purple-600 to-rose-600 bg-clip-text text-transparent font-bold">About Me</h2>
+
+        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+            <div class="max-w-max mx-auto relative">
+                <img src="./images/profile.JPG" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+            </div>
+            <div class="flex-1">
+                <p class="mb-10 max-w-2xl">I am an experienced Full Stack Developer with over 4 years of professional expertise in the field. Throughout my career, I 
+                    have had the privilege of collaborating with prestigious organizations such as Infinite Computer Solutions, Capgemini, and Infosys Limited,
+                    contributing to their success and growth.
+                </p>
+                <ul class="max-w-2xl">
+                    <li class="border-[0.5px] my-5 border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#6b0e63]">
+                        <img src="./images/code-icon.png" alt="" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Languages & Skills :</h3>
+                        <p class="text-gray-600 text-sm"><span class="font-bold">Frontend : </span>HTML, CSS, Tailwind CSS, ReactJs, NextJs, Redux, VueJs.</p>
+                        <p class="text-gray-600 text-sm"><span class="font-bold">Backend : </span>Node.js, Express.js, TypeScript, JavaScript, Java, C, C++, Python, Go, Flask, Spring, SpringBoot, Nokia FlowOne, NGINX.</p>
+                        <p class="text-gray-600 text-sm"><span class="font-bold">Database : </span>MySQL, PostgreSQL, MongoDB, Redis, Oracle.</p>
+                        <p class="text-gray-600 text-sm"><span class="font-bold">Skills : </span>MERN Stack, Git & GitHub, System Design, Linux, Pandas, NumPy, Postman, SoapUI, AWS, Docker, Kubernetes, Jenkins, Bitbucket, SocketIO, Zod, Jwt.</p>
+                    </li>
+
+                    <li class="border-[0.5px] border-gray-400 my-5 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#6b0e63]">
+                        <img src="./images/edu-icon.png" alt="" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+                        <p class="text-gray-600 text-sm">B.E in Computer Science from VTU, Bangalore</p>
+                    </li>
+
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#6b0e63]">
+                        <img src="./images/project-icon.png" alt="" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
+                        <p class="text-gray-600 text-sm">Built more than 70 projects</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
