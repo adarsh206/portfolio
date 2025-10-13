@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="./tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
 </head>
 
-<div class="overflow-x-hidden">
+<body class="overflow-x-hidden font-Outfit dark:bg-[#11001F]">
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
         <img src="./images/header-bg-color.png" alt="" class="w-full">
     </div>
-    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 backdrop-blur">
-        <h1 class="w-48 text-3xl md:text-3xl cursor-pointer font-bold mr-14 bg-gradient-to-r from bg-purple-600 to-rose-600 bg-clip-text text-transparent">PORTFOLIO</h1>
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 backdrop-blur font-Ovo">
+        <h1 class="w-48 text-3xl md:text-3xl cursor-pointer font-bold mr-14 bg-gradient-to-r from bg-purple-600 to-rose-600 bg-clip-text text-transparent"><a href="#top">PORTFOLIO</a></h1>
         <ul class="md:flex hidden items-center gap-6 lg:gap-8 rounded-full px-12 py-3 backdrop-blur shadow-sm bg-opacity-50">
             <li><a href="#top">Home</a></li>
             <li><a href="#about">About Me</a></li>
@@ -25,7 +28,7 @@
         <div class="flex items-center gap-4">
              <button class="cursor-pointer"><img src="./images/moon_icon.png" alt="" class="w-6"></button>
             
-             <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">Contact 
+             <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo">Contact 
             <img src="./images/arrow-icon.png" alt="" class="w-3"/>
         </a>
 
@@ -35,7 +38,7 @@
         </div>
 
         <!------- Mobile Menu -------->
-        <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500">
+        <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo">
             
             <div class="absolute cursor-pointer right-6 top-6" onclick="closeMenu()">
                 <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer">
@@ -52,10 +55,10 @@
     <!------- Header Section -------->
     <div class="w-11/12 max-w-3xl text-center mx-auto pt-30 pb-10 sm:pb-20 flex flex-col items-center justify-center gap-4">
         <img src="./images/profile.JPG" alt="" class="rounded-full w-50 sm:w-32">
-        <h3 class="flex items-end gap-2 text-2xl md:text-3xl mb-3">Hi! I'm <span class="font-bold bg-gradient-to-r from-purple-600 to-rose-600 bg-clip-text text-transparent">Adarsh Kumar</span> 
+        <h3 class="flex items-end gap-2 text-2xl md:text-3xl mb-3 font-Ovo">Hi! I'm <span class="font-bold bg-gradient-to-r from-purple-600 to-rose-600 bg-clip-text text-transparent">Adarsh Kumar</span> 
             <img src="./images/hand-icon.png" alt="" class="w-6"></h3>
-        <h1 class="text-3xl sm:text-6xl lg:text-[56px]"><span class="font-bold bg-gradient-to-r from bg-purple-600 to-rose-600 bg-clip-text text-transparent">Software Engineer</span> based in India.</h1>
-        <p class="max-w-2xl mx-auto">I am a Full Stack Developer from India with 4 years of experience in multiple companies like Infinite Computer Solutions, Capgemini and Infosys Limited.</p>
+        <h1 class="text-3xl sm:text-6xl lg:text-[56px] font-Ovo"><span class="font-bold bg-gradient-to-r from bg-purple-600 to-rose-600 bg-clip-text text-transparent">Software Engineer</span> based in India.</h1>
+        <p class="max-w-2xl mx-auto font-Ovo">I am a Full Stack Developer from India with 4 years of experience in multiple companies like Infinite Computer Solutions, Capgemini and Infosys Limited.</p>
 
         <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
             <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-purple-700 to-rose-600 text-white flex items-center gap-2 hover:scale-105">contact me 
@@ -91,7 +94,7 @@
                         <p class="text-gray-600 text-sm"><span class="font-bold">Frontend : </span>HTML, CSS, Tailwind CSS, ReactJs, NextJs, Redux, VueJs.</p>
                         <p class="text-gray-600 text-sm"><span class="font-bold">Backend : </span>Node.js, Express.js, TypeScript, JavaScript, Java, C, C++, Python, Go, Flask, Spring, SpringBoot, Nokia FlowOne, NGINX.</p>
                         <p class="text-gray-600 text-sm"><span class="font-bold">Database : </span>MySQL, PostgreSQL, MongoDB, Redis, Oracle.</p>
-                        <p class="text-gray-600 text-sm"><span class="font-bold">Skills : </span>MERN Stack, Git & GitHub, System Design, Linux, Pandas, NumPy, Postman, SoapUI, AWS, Docker, Kubernetes, Jenkins, Bitbucket, SocketIO, Zod, Jwt.</p>
+                        <p class="text-gray-600 text-sm"><span class="font-bold">Skills : </span>MERN Stack, Git & GitHub, System Design, Linux, Pandas, NumPy, Postman, SoapUI, AWS, Docker, Kubernetes, Jenkins, Bitbucket, SocketIO, Zod, Jwt, Jest.</p>
                     </li>
 
                     <li class="border-[0.5px] border-gray-400 my-5 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#6b0e63]">
@@ -172,8 +175,8 @@
     <!-- services -->
      <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
         <h4 class="text-center mb-2 text-lg">What I Offer</h4>
-        <h2 class="text-center text-5xl bg-gradient-to-r from-purple-600 to-rose-600 bg-clip-text text-transparent font-bold">My Services</h2>
-        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I am a Full Stack Developer from India with 4 years of experience in multiple companies like Infinite Computer Solutions, Capgemini and Infosys Limited.</p>
+        <h2 class="text-center text-5xl pb-3 bg-gradient-to-r from-purple-600 to-rose-600 bg-clip-text text-transparent font-bold">My Services</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I am a Full Stack Developer from India with 4 years of experience in multiple companies like Infinite Computer Solutions, Capgemini and Infosys Limited.</p>
     
         <div class="grid grid-cols-1 sm:grid-cols-3 md:gid-cols-4 gap-6 my-10">
             <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#6b0e63] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
@@ -228,8 +231,8 @@
 
     <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
         <h4 class="text-center mb-2 text-lg">My Portfolio</h4>
-        <h2 class="text-center text-5xl bg-gradient-to-r from-purple-600 to-rose-600 bg-clip-text text-transparent font-bold">My Latest Work</h2>
-        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Welcome to my web development and full stack development portfolio! Explore a collection of projects 
+        <h2 class="text-center text-5xl pb-2 font-Ovo bg-gradient-to-r from-purple-600 to-rose-600 bg-clip-text text-transparent font-bold">My Latest Work</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Welcome to my web development and full stack development portfolio! Explore a collection of projects 
             showcasing my expertise in both front-end and back-end development.</p>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 my-10 gap-5">
@@ -294,9 +297,9 @@
 
     <!--------------------contact me ------------------->
     <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center">
-        <h4 class="text-center mb-2 text-lg">Connect with me</h4>
+        <h4 class="text-center mb-2 text-lg font-Ovo">Connect with me</h4>
         <h2 class="text-center text-5xl bg-gradient-to-r from-purple-600 to-rose-600 bg-clip-text text-transparent font-bold">Get in touch</h2>
-        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
         
         <form action="" class="max-w-2xl mx-auto">
             <div class="grid sm:grid-cols-2 gap-6 mt-10 mb-8">
