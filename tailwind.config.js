@@ -1,5 +1,17 @@
 tailwind.config = {
     theme: {
+        fontFamily:{
+            Outfit: ['Outfit', 'sans-serif'],
+            Ovo: ['Ovo', 'serif']
+        }
+    },
+    darkMode: 'selector'
+}
+
+{/**
+    
+    tailwind.config = {
+    theme: {
         gridTemplateColumns: {
             'auto' : 'repeat(auto-fit, minmax(200px, 1fr))'
         },
@@ -10,3 +22,6 @@ tailwind.config = {
     },
     darkMode: 'selector'
 }
+    
+    
+    */}
